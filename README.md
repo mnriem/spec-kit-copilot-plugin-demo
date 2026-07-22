@@ -1,6 +1,6 @@
 # spec-kit Copilot Plugin Demo
 
-This project demonstrates an end-to-end AI-assisted documentation workflow using [spec-kit](https://github.com/github/spec-kit) with the Spec Kit plugin for GitHub Copilot CLI. Starting from a raw GitHub issue, a new documentation page was shaped and shipped entirely through structured agents — first the Idea Assessment Pipeline (the `assess` extension), then Spec-Driven Development. The steps below document exactly what was entered — you can follow the same process to take your own ideas from issue to implementation.
+This project demonstrates an end-to-end AI-assisted development workflow using [spec-kit](https://github.com/github/spec-kit) with the Spec Kit plugin for GitHub Copilot CLI. Starting from a raw GitHub issue, an idea was assessed, specified, planned, and shipped entirely through structured agents — first the Idea Assessment Pipeline (the `assess` extension), then Spec-Driven Development. The steps below document exactly what was entered — you can follow the same process to take your own ideas from issue to implementation.
 
 > **Note on the workflow:** The feature was not driven by an elaborate formal specification. It began as a raw GitHub issue, was assessed through the intake → research → define → shape → decide pipeline, and only then handed off to Spec-Driven Development. Each command below is the exact prompt entered into Copilot Chat, as you will see.
 
@@ -105,7 +105,7 @@ Scores the idea and records the verdict in `decision.md`: **go**, handing off to
 
 ## Delivery — Spec-Driven Development
 
-With a **go** decision in hand, the standard spec-kit agents took the idea from specification to shipped documentation.
+With a **go** decision in hand, the standard spec-kit agents took the idea from specification to a shipped change.
 
 ### Step 11 — Specify
 
@@ -143,4 +143,4 @@ Executes the tasks: adds `docs/concepts/spec-of-specs.md`, trims Option 4 in `co
 
 ## Result
 
-A raw GitHub issue turned into shipped documentation — assessed, specified, planned, and implemented through structured agent workflows without manual scaffolding. The result is a new concept page (`docs/concepts/spec-of-specs.md`) integrated into the docs table of contents, produced entirely through the Spec Kit plugin for GitHub Copilot CLI.
+A raw GitHub issue turned into a shipped change — assessed, specified, planned, and implemented through structured agent workflows without manual scaffolding. In this run the idea happened to resolve to a documentation change (a new concept page wired into the docs table of contents), but the point of the demo is the workflow itself: the Spec Kit plugin for GitHub Copilot CLI carrying any idea from issue to implementation.
