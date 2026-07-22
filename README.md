@@ -12,8 +12,34 @@ This project is built on top of **[spec-kit](https://github.com/github/spec-kit)
 
 ## Prerequisites
 
-- [GitHub Copilot CLI](https://github.com/github/copilot-cli) with the Spec Kit plugin installed
+- [GitHub Copilot CLI](https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli)
+- The Spec Kit `specify` CLI on your `PATH`:
+
+  ```bash
+  uv tool install specify-cli      # or: pipx install specify-cli
+  specify --version
+  ```
+
 - A GitHub repository to work in
+
+### Install the Spec Kit Copilot plugin
+
+This demo is driven by the [Spec Kit Copilot plugin](https://github.com/github/spec-kit-copilot), which exposes the `specify` CLI to the Copilot agent as skills. Register the marketplace, then install the plugin:
+
+```bash
+copilot plugin marketplace add github/spec-kit-copilot
+copilot plugin install spec-kit-copilot@spec-kit-marketplace
+```
+
+Verify it loaded:
+
+```bash
+copilot plugin list
+# or, inside an interactive session:
+/skills list
+```
+
+See the [plugin README](https://github.com/github/spec-kit-copilot#installation) for local development installs and troubleshooting.
 
 ---
 
